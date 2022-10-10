@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(162, 78, 190), rgb(171, 61, 61));
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  position: sticky;
+  z-index: 3;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-area img {
+  margin-right: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+.logo-area h2 {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+
+.nav-links ul a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links ul a:hover {
+  color: rgb(138, 138, 138);
+}
+
+.nav-links ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+.information {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+.pc {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 31%;
+  transform: translateY(-50%);
+}
+
+.feature {
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.feature img {
+  width: 70px;
+  height: 70px;
+}
+
+.feature div {
+  margin-left: 20px;
+}
+
+.feature div p {
+  margin-top: 10px;
+}
+
+.one {
+  top: 450px;
+  right: 70px;
+}
+
+.two {
+  top: 100px;
+  left: 340px;
+  transform: rotate(-90deg);
+}
+
+.three {
+  bottom: 450px;
+  left: 70px;
+  transform: rotate(-180deg);
+}
+
+.four {
+  bottom: 150px;
+  left: 370px;
+  transform: rotate(-270deg);
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.control h3 {
+  color: white;
+}
+
+.control img {
+  width: 30px;
+  height: 30px;
+}
+
+#upBtn {
+  cursor: pointer;
+}
+
+#downBtn {
+  cursor: pointer;
+  transform: rotate(180deg);
+  margin-top: 5px;
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 520px solid white;
+  border-left: 520px solid white;
+  border-right: 520px solid transparent;
+  border-bottom: 520px solid white;
+}
